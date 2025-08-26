@@ -8,7 +8,7 @@ Script for installing node in Ansible
   hosts: localhost
   become: true
   vars:
-    node_version: "20" 
+    node_version: "22.18.0" 
 
   tasks:
     - name: Install Node
