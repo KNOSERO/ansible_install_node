@@ -11,6 +11,6 @@ Script for installing node in Ansible
     node_version: "20" 
 
   tasks:
-    - name: Install Podman
+    - name: Install Node
       include_tasks: ./task/ansible_install_node/playbook.yml 
 ```
