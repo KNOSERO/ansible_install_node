@@ -1,7 +1,6 @@
 # Ansible Install Node
 Script for installing node in Ansible
 
-
 ## Example
 
 ```yaml
@@ -10,4 +9,8 @@ Script for installing node in Ansible
   become: true
   vars:
     node_version: "20" 
+
+  tasks:
+    - name: Install Podman
+      include_tasks: ./task/ansible_install_node/playbook.yml 
 ```
